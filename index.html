@@ -13,22 +13,39 @@
 
     <section>
       <aside class="tab">
-        <button class="tablinks" onclick="openPage(event, 'Photos')">Games</button><br>
-        <button class="tablinks" onclick="openPage(event, 'Videos')">School</button><br>
-        <button class="tablinks" onclick="openPage(event, 'Games')">Timetable</button><br>
-        <button class="tablinks" onclick="openPage(event, 'Poems')">Ai</button><br>
-        <button class="tablinks" onclick="openPage(event, 'Quotes')">?</button><br>
-        <button class="tablinks" onclick="openPage(event, 'Timetable')">?</button><br>
+        <button class="tablinks" onclick="openPage(event, 'games')">Games</button><br>
+        <button class="tablinks" onclick="openPage(event, 'school')">School</button><br>
+        <button class="tablinks" onclick="openPage(event, 'timetable')">Timetable</button><br>
+        <button class="tablinks" onclick="openPage(event, 'ai')">Ai</button><br>
+        <button class="tablinks" onclick="openPage(event, '?1')">?1</button><br>
+        <button class="tablinks" onclick="openPage(event, '?2')">?2</button><br>
       </aside>
     </section>
 
     <section>
-      <article>
-        <h1>E</h1>
-        <p>More E</p>Even more E</p>
-        <p id="silly">click below if Toby is a silly bugger</p>
-        <button type="button" onclick="document.getElementById('silly').innerHTML = 'indeed he is'">Click here</button>
-      </article>
+      <div id="games" class="tabcontent">
+        <h1>Game tab</h1>
+      </div>
+
+      <div id="school" class="tabcontent">
+        <h1>School tab</h1>
+      </div>
+
+      <div id="timetable" class="tabcontent">
+        <h1>timetable tab</h1>
+      </div>
+
+      <div id="ai" class="tabcontent">
+        <h1>ai tab</h1>
+      </div>
+
+      <div id="?1" class="tabcontent">
+        <h1>?1 tab</h1>
+      </div>
+
+      <div id="?2" class="tabcontent">
+        <h1>?2 tab</h1>
+      </div>
     </section>
 
     <footer>
@@ -36,4 +53,20 @@
     </footer>
     
   </body>
+
+<script>
+  function openPage(evt, Page) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Page).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 </html>
