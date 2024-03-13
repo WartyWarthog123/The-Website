@@ -8,8 +8,8 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "C:\\Users\\james\\Documents\\GitHub\\The-Website\\index.html"
+            "file": "C:\\Users\\james\\Documents\\GitHub\\The-Website\\index.html",
+            "file": "C:/Users/rando/OneDrive/Documents/GitHub/The-Website/index.html",
         },
-       
-    ]
+    ]  
 }
