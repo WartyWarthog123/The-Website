@@ -19,19 +19,6 @@
         myScore = new component("30px", "Consolas", "black", 280, 40, "text");
         myGameArea.start();
     }
-
-    function restartGame() {
-    document.getElementById("myfilter").style.display = "none";
-    document.getElementById("myrestartbutton").style.display = "none";
-    myGameArea.stop();
-    myGameArea.clear();
-    myGameArea = {};
-    myGamePiece = {};
-    myObstacles = [];
-    myscore = {};
-    document.getElementById("canvascontainer").innerHTML = "";
-    startGame()
-    }
     
     var myGameArea = {
         canvas : document.createElement("canvas"),
@@ -141,7 +128,5 @@
     </script>
     <br>
     <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-    <div id="myrestartbutton" style="position: absolute; padding-top: 75px; padding-left: 120px; display: block;"><button onclick="restartGame()">Restart</button></div>
-    <p>Use the ACCELERATE button to stay in the air</p>
-    <p>How long can you stay alive?</p>
+    <button onclick="startGame()">Restart</button>
     </body>
