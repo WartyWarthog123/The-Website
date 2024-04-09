@@ -4,15 +4,14 @@
     <title>The Website</title>
   </head>
 
-  <body>
-    <header>
+  <body onload="openPage(event, 'home')">
+    <header style="border: 2px solid; border-radius: 5px;">
       <h2>E</h2>
     </header>
     
     <section>
-      <aside class="tab">
+      <aside class="tab" style="border: 2px solid; border-radius: 5px;">
         <button class="tablinks" onclick="openPage(event, 'home')">Home</button><br>
-
         <button class="tablinks" onclick="openPage(event, 'games')">Games</button><br>
         <button class="tablinks" onclick="openPage(event, 'school')">School</button><br>
         <button class="tablinks" onclick="openPage(event, 'timetable')">Timetable</button><br>
@@ -23,7 +22,7 @@
     </section>
 
     <section>
-      <article>
+      <article style="border: 2px solid; border-radius: 5px;">
         <div id="home" class="tabcontent">
           <iframe src="Pages/Home.html" style="border:none;" height="100%" width="100%"></iframe>
         </div>
@@ -31,9 +30,9 @@
           <iframe src="Pages/games.html" style="border:none;" height="100%" width="100%"></iframe> 
         </div>
 
-      <div id="school" class="tabcontent">
-        <iframe src="Pages/school.html" style="border:none;" height="100%" width="100%"></iframe> 
-      </div>
+        <div id="school" class="tabcontent">
+          <iframe src="Pages/school.html" style="border:none;" height="100%" width="100%"></iframe> 
+        </div>
 
         <div id="timetable" class="tabcontent">
           <iframe src="Pages/timetable.html" style="border:none;" height="100%" width="100%"></iframe> 
