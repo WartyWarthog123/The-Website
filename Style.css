@@ -71,18 +71,14 @@ body {
   border-color: black;
 }
 
-.tab button {
-  background-color: inherit;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 25px;
-  color: #000000;
-  width: 90%;
-  height: 10%;
+.tab button { 
+  display: block; 
+  text-align: center; 
+  padding: 16px;
+  transition: all 0.3s ease; 
+  color: rgb(0, 0, 0); 
+  font-size: 30px;
+  width: 100%
 }
 
 .tab button:hover {
