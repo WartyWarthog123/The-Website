@@ -11,24 +11,30 @@
         outline: 0;
         padding: 12px;
         color: white;
-        background-color: #000;
+        background-color: #5a5a5a;
         text-align: center;
         cursor: pointer;
         width: 100%;
         font-size: 18px;
     }
+    .price {
+        color: grey;
+        font-size: 22px;
+      }
 </style>
 <h1>School Page</h1>
 <p>Included in this page is useful links for doing schoolwork as well as all the domain used by our school so to be an easy access
     home page to everything that we may need.
 </p>
 <h2>Links</h2>
-<h3>Engadine High School Sentral</h3>
-<button id="openSentral" onclick="websiteLaunch()">Open Sentral</button>
-<script>
-    function websiteLaunch() {
-        var url = 'https://engadine-h.sentral.com.au/auth/portal';
-        var newTab = window.open(url, '_blank');
-        newTab.focus();
-    }
-</script>
+<div class="card">
+    <p class="price">Engadine High School Sentral</p>
+    <button id="openSentral" onclick="websiteLaunch()">Open Sentral</button>
+    <script>
+        function websiteLaunch() {
+            var url = 'https://engadine-h.sentral.com.au/auth/portal';
+            var newTab = window.open(url, '_blank');
+            newTab.focus();
+        }
+    </script>
+</div>
