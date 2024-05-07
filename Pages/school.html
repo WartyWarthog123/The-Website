@@ -1,7 +1,8 @@
 <style>
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 200px;
+        width: 200px;
+        max-height:200px;
         margin: auto;
         border-width: 2px;
         text-align: center;
@@ -26,21 +27,50 @@
         color: black;
         font-size: 22px;
         padding:12px;
-      }
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
 </style>
 <h1>School Page</h1>
 <p>Included in this page is useful links for doing schoolwork as well as all the domain used by our school so to be an easy access
     home page to everything that we may need.
 </p>
 <h2>Links</h2>
-<div class="card">
-    <p class="price">Engadine High School Sentral</p>
-    <button id="openSentral" onclick="websiteLaunch()">Open Sentral</button>
-    <script>
-        function websiteLaunch() {
-            var url = 'https://engadine-h.sentral.com.au/auth/portal';
-            var newTab = window.open(url, '_blank');
-            newTab.focus();
-        }
-    </script>
+<div class="row">
+    <div class="card">
+        <p class="price">Engadine High School Sentral</p>
+        <button id="openSentral" onclick="websiteLaunch()">Open Sentral</button>
+        <script>
+            function websiteLaunch() {
+                var url = 'https://engadine-h.sentral.com.au/auth/portal';
+                var newTab = window.open(url, '_blank');
+                newTab.focus();
+            }
+        </script>
+    </div>
+    <div class="card">
+        <p class="price">Gmail</p>
+        <button id="openGmail" onclick="gmailLaunch()">Open Gmail</button>
+        <script>
+            function gmailLaunch() {
+                var url = 'https://mail.google.com/mail/u/0/#inbox';
+                var newTab = window.open(url, '_blank');
+                newTab.focus();
+            }
+        </script>
+    </div>
+    <div class="card">
+        <p class="price">Google Classroom</p>
+        <button id="openClassroom" onclick="classroomLaunch()">Open Google Classroom</button>
+        <script>
+            function classroomLaunch() {
+                var url = 'https://classroom.google.com/h';
+                var newTab = window.open(url, '_blank');
+                newTab.focus();
+            }
+        </script>
+    </div>
 </div>
