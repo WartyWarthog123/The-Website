@@ -1,14 +1,18 @@
 <style>
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 300px;
+        max-width: 200px;
         margin: auto;
+        border-width: 2px;
         text-align: center;
         font-family: arial;
+        border-color: black;
+        border-radius:25px;
     }
     .card button {
-        border: none;
-        outline: 0;
+        border: dotted;
+        border-color:rgb(48, 48, 48);
+        border-width: 2px;
         padding: 12px;
         color: white;
         background-color: #5a5a5a;
@@ -16,10 +20,12 @@
         cursor: pointer;
         width: 100%;
         font-size: 18px;
+        border-radius:25px;
     }
     .price {
-        color: grey;
+        color: black;
         font-size: 22px;
+        padding:12px;
       }
 </style>
 <h1>School Page</h1>
@@ -35,8 +41,6 @@
             var url = 'https://engadine-h.sentral.com.au/auth/portal';
             var newTab = window.open(url, '_blank');
             newTab.focus();
-            var url = "https://alltrails.com";
-            var newTab = window.open(url, '_blank');
         }
     </script>
 </div>
