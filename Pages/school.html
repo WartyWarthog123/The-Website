@@ -73,4 +73,37 @@
             }
         </script>
     </div>
+    <div class="card">
+        <p class="price">Canva</p>
+        <button id="openCanva" onclick="canvaLaunch()">Open Canva</button>
+        <script>
+            function canvaLaunch() {
+                var url = 'https://canva.com';
+                var newTab = window.open(url, '_blank');
+                newTab.focus();
+            }
+        </script>
+    </div>
+    <div class="card">
+        <p class="price">Google Docs</p>
+        <button id="openDocs" onclick="docsLaunch()">Open Docs</button>
+        <script>
+            function docsLaunch() {
+                var url = 'https://docs.google.com/document/u/0/?tgif=d';
+                var newTab = window.open(url, '_blank');
+                newTab.focus();
+            }
+        </script>
+    </div>
+    <div class="card">
+        <p class="price">Google Slides</p>
+        <button id="openSlides" onclick="openSlides()">Open Slides</button>
+        <script>
+            function openSlides() {
+                var url = 'https://docs.google.com/presentation/u/0/?tgif=c';
+                var newTab = window.open(url, '_blank');
+                newTab.focus();
+            }
+        </script>
+    </div>
 </div>
