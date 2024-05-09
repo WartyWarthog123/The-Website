@@ -31,7 +31,8 @@
     .row {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 4px;
+        padding: 0 2px;
+        margin-bottom: 10px;
     }
 </style>
 <h1>School Page</h1>
@@ -102,6 +103,19 @@
             function openSlides() {
                 var url = 'https://docs.google.com/presentation/u/0/?tgif=c';
                 var newTab = window.open(url, '_blank');
+                newTab.focus();
+            }
+        </script>
+    </div>
+</div>
+<div class="row">
+    <div class="card">
+        <p class="price">Google Drive</p>
+        <button id="openDrive" onclick="openDrive()">Open Drive</button>
+        <script>
+            function openDrive() {
+                var url = 'https://drive.google.com/drive/u/0/home';
+                var newTab = window.open(url, '_blank')
                 newTab.focus();
             }
         </script>
