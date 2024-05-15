@@ -1,1 +1,220 @@
-<h1>Timetable Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Timetable</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<h2>School Timetable</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Periods</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Period 1</td>
+            <td>
+                <select id="period-1-monday">
+                <option value="color0" selected output>Colour:</option>
+                <option value="color1">Red</option>
+                <option value="color2">Yellow</option>
+                <option value="color3">Green</option>
+                <option value="color4">Purple</option>
+                <option value="color5">Grey</option>
+                <option value="color6">Blue</option>
+            </td>
+            <td><input type="text" id="period-1-tuesday"></td>
+            <td><input type="text" id="period-1-wednesday"></td>
+            <td><input type="text" id="period-1-thursday"></td>
+            <td><input type="text" id="period-1-friday"></td>
+        </tr>
+        <tr>
+            <td>Period 2</td>
+            <td><input type="text" id="period-2-monday"></td>
+            <td><input type="text" id="period-2-tuesday"></td>
+            <td><input type="text" id="period-2-wednesday"></td>
+            <td><input type="text" id="period-2-thursday"></td>
+            <td><input type="text" id="period-2-friday"></td>
+        </tr>
+        <tr>
+            <td>Period 3</td>
+            <td><input type="text" id="period-3-monday"></td>
+            <td><input type="text" id="period-3-tuesday"></td>
+            <td><input type="text" id="period-3-wednesday"></td>
+            <td><input type="text" id="period-3-thursday"></td>
+            <td><input type="text" id="period-3-friday"></td>
+        </tr>
+        <tr>
+            <td>Period 4</td>
+            <td><input type="text" id="period-4-monday"></td>
+            <td><input type="text" id="period-4-tuesday"></td>
+            <td><input type="text" id="period-4-wednesday"></td>
+            <td><input type="text" id="period-4-thursday"></td>
+            <td><input type="text" id="period-4-friday"></td>
+        </tr>
+        <tr>
+            <td>Period 5</td>
+            <td><input type="text" id="period-5-monday"></td>
+            <td><input type="text" id="period-5-tuesday"></td>
+            <td><input type="text" id="period-5-wednesday"></td>
+            <td><input type="text" id="period-5-thursday"></td>
+            <td><input type="text" id="period-5-friday"></td>
+        </tr>
+        <tr>
+            <td>Period 6</td>
+            <td><input type="text" id="period-6-monday"></td>
+            <td><input type="text" id="period-6-tuesday"></td>
+            <td><input type="text" id="period-6-wednesday"></td>
+            <td><input type="text" id="period-6-thursday"></td>
+            <td><input type="text" id="period-6-friday"></td>
+        </tr>
+        <tr>
+            <td>Period 7</td>
+            <td><input type="text" id="period-7-monday"></td>
+            <td><input type="text" id="period-7-tuesday"></td>
+            <td><input type="text" id="period-7-wednesday"></td>
+            <td><input type="text" id="period-7-thursday"></td>
+            <td><input type="text" id="period-7-friday"></td>
+        </tr>        
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th>Periods</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Period 1</td>
+            <td><input type="text" id="period2-1-monday2"></td>
+            <td><input type="text" id="period2-1-tuesday2"></td>
+            <td><input type="text" id="period2-1-wednesday2"></td>
+            <td><input type="text" id="period2-1-thursday2"></td>
+            <td><input type="text" id="period2-1-friday2"></td>
+        </tr>
+        <tr>
+            <td>Period 2</td>
+            <td><input type="text" id="period2-2-monday2"></td>
+            <td><input type="text" id="period2-2-tuesday2"></td>
+            <td><input type="text" id="period2-2-wednesday2"></td>
+            <td><input type="text" id="period2-2-thursday2"></td>
+            <td><input type="text" id="period2-2-friday2"></td>
+        </tr>
+        <tr>
+            <td>Period 3</td>
+            <td><input type="text" id="period2-3-monday2"></td>
+            <td><input type="text" id="period2-3-tuesday2"></td>
+            <td><input type="text" id="period2-3-wednesday2"></td>
+            <td><input type="text" id="period2-3-thursday2"></td>
+            <td><input type="text" id="period2-3-friday2"></td>
+        </tr>
+        <tr>
+            <td>Period 4</td>
+            <td><input type="text" id="period2-4-monday2"></td>
+            <td><input type="text" id="period2-4-tuesday2"></td>
+            <td><input type="text" id="period2-4-wednesday2"></td>
+            <td><input type="text" id="period2-4-thursday2"></td>
+            <td><input type="text" id="period2-4-friday2"></td>
+        </tr>
+        <tr>
+            <td>Period 5</td>
+            <td><input type="text" id="period2-5-monday2"></td>
+            <td><input type="text" id="period2-5-tuesday2"></td>
+            <td><input type="text" id="period2-5-wednesday2"></td>
+            <td><input type="text" id="period2-5-thursday2"></td>
+            <td><input type="text" id="period2-5-friday2"></td>
+        </tr>
+        <tr>
+            <td>Period 6</td>
+            <td><input type="text" id="period2-6-monday2"></td>
+            <td><input type="text" id="period2-6-tuesday2"></td>
+            <td><input type="text" id="period2-6-wednesday2"></td>
+            <td><input type="text" id="period2-6-thursday2"></td>
+            <td><input type="text" id="period2-6-friday2"></td>
+        </tr>
+        <tr>
+            <td>Period 7</td>
+            <td><input type="text" id="period2-7-monday2"></td>
+            <td><input type="text" id="period2-7-tuesday2"></td>
+            <td><input type="text" id="period2-7-wednesday2"></td>
+            <td><input type="text" id="period2-7-thursday2"></td>
+            <td><input type="text" id="period2-7-friday2"></td>
+        </tr>        
+    </tbody>
+    
+</table>
+
+<button onclick="saveSubjects">
+Save Table
+</button>
+
+<button onclick="loadSubjects">
+Load Table
+</button>
+
+<script>
+    // JavaScript function to get the value of each input field and store it in a variable
+    function saveSubjects() {
+        var subjects = {};
+
+        // Loop through each input field and store the value in the subjects object
+        for (var i = 1; i <= 7; i++) {
+            subjects["monday-" + i] = document.getElementById("period-" + i + "-monday").value;
+            subjects["tuesday-" + i] = document.getElementById("period-" + i + "-tuesday").value;
+            subjects["wednesday-" + i] = document.getElementById("period-" + i + "-wednesday").value;
+            subjects["thursday-" + i] = document.getElementById("period-" + i + "-thursday").value;
+            subjects["friday-" + i] = document.getElementById("period-" + i + "-friday").value;
+        }
+
+        // Convert the subjects object to JSON and store it in localStorage
+        localStorage.setItem("subjects", JSON.stringify(subjects));
+    }
+
+    // JavaScript function to load subjects from localStorage and populate input fields
+    function loadSubjects() {
+        var subjects = JSON.parse(localStorage.getItem("subjects"));
+
+        // Loop through each input field and set its value from the subjects object
+        for (var i = 1; i <= 7; i++) {
+            document.getElementById("period2-" + i + "-monday2").value = subjects["monday-" + i] || "";
+            document.getElementById("period2-" + i + "-tuesday2").value = subjects["tuesday-" + i] || "";
+            document.getElementById("period2-" + i + "-wednesday2").value = subjects["wednesday-" + i] || "";
+            document.getElementById("period2-" + i + "-thursday2").value = subjects["thursday-" + i] || "";
+            document.getElementById("period2-" + i + "-friday2").value = subjects["friday-" + i] || "";
+        }
+    }
+</script>
+
+</body>
+</html>
