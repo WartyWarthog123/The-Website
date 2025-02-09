@@ -182,36 +182,41 @@ Load Table
 </button>
 
 <script>
-    // JavaScript function to get the value of each input field and store it in a variable
-    function saveSubjects() {
-        var subjects = {};
-
-        // Loop through each input field and store the value in the subjects object
-        for (var i = 1; i <= 7; i++) {
-            subjects["monday-" + i] = document.getElementById("period-" + i + "-monday").value;
-            subjects["tuesday-" + i] = document.getElementById("period-" + i + "-tuesday").value;
-            subjects["wednesday-" + i] = document.getElementById("period-" + i + "-wednesday").value;
-            subjects["thursday-" + i] = document.getElementById("period-" + i + "-thursday").value;
-            subjects["friday-" + i] = document.getElementById("period-" + i + "-friday").value;
-        }
-
-        // Convert the subjects object to JSON and store it in localStorage
-        localStorage.setItem("subjects", JSON.stringify(subjects));
+    # Define the structure
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    periods = ["Period 1", "Period 2", "Period 3", "Period 4", "Period 5", "Period 6"]
+    colors = ["Red", "Yellow", "Green", "Purple", "Grey", "Blue"]
+    
+    # Function to generate the timetable for a given week
+    def generate_timetable(week_name, times):
+        print(f"Week {week_name}")
+        for day in days:
+            print(f"{day}:")
+            for i, period in enumerate(periods):
+                print(f"  {period}: {colors[i % len(colors)]}")
+            if day in times:
+                print(f"  {times[day]}")
+    
+    # Define the times for Week A and Week B
+    week_a_times = {
+        "Monday": "9:23",
+        "Tuesday": "8:53",
+        "Wednesday": "10:10",
+        "Thursday": "9:45",
+        "Friday": "10:57"
     }
-
-    // JavaScript function to load subjects from localStorage and populate input fields
-    function loadSubjects() {
-        var subjects = JSON.parse(localStorage.getItem("subjects"));
-
-        // Loop through each input field and set its value from the subjects object
-        for (var i = 1; i <= 7; i++) {
-            document.getElementById("period2-" + i + "-monday2").value = subjects["monday-" + i] || "";
-            document.getElementById("period2-" + i + "-tuesday2").value = subjects["tuesday-" + i] || "";
-            document.getElementById("period2-" + i + "-wednesday2").value = subjects["wednesday-" + i] || "";
-            document.getElementById("period2-" + i + "-thursday2").value = subjects["thursday-" + i] || "";
-            document.getElementById("period2-" + i + "-friday2").value = subjects["friday-" + i] || "";
-        }
+    
+    week_b_times = {
+        "Monday": "9:23",
+        "Tuesday": "8:53",
+        "Wednesday": "10:10",
+        "Thursday": "9:45",
+        "Friday": "10:57"
     }
+    
+    # Generate the timetables
+    generate_timetable("A", week_a_times)
+    generate_timetable("B", week_b_times)
 </script>
 
 </body>
