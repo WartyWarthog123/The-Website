@@ -5,218 +5,1983 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>School Timetable</title>
 <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: center;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
+        .table1, td, th {
+          border: 1px solid black;
+          border-collapse: collapse;
+          font-weight: normal;
+          width: 16%;
+          height: 80%;
+        }
+        
+        .dataTable, th {
+          border: 1px solid black;
+          border-collapse: collapse;
+          font-weight: normal;
+          width: 14.2857143%;
+          height: 100%;
+        }
+        
+        .dataTable, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          font-weight: bold;
+          width: 14.2857143%;
+          height: 100%;
+        }
+
+        select option[value="color0"] {
+          background-color: #ffffff;
+        }
+        select option[value="color1"] {
+          background-color: #ffdfde;
+        }
+        select option[value="color2"] {
+          background-color: #ffffdf;
+        }
+        select option[value="color3"] {
+          background-color: #dfffde;
+        }
+        select option[value="color4"] {
+          background-color: #efdeff;
+        }
+        select option[value="color5"] {
+          background-color: #e6efef;
+        }
+        select option[value="color6"] {
+          background-color: #dffffe;
+        }
+
+
+        .color0 {background-color: #ffffff;}
+        .color1 {background-color: #ffdfde;}
+        .color2 {background-color: #ffffdf;}
+        .color3 {background-color: #dfffde;}
+        .color4 {background-color: #efdeff;}
+        .color5 {background-color: #e6efef;}
+        .color6 {background-color: #dffffe;}
+
 </style>
-</head>
+
 <body>
+    <h3>Timetable</h3>
+    <form id="dataForm">
+      <table id="table1">
+        <tr>
+          <td>Week A</td>
+          <td>Monday</td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
+        </tr>
+        <tr>
+          <td>Period 1</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p1w1" name="d1p1w1">
+            <select id="colors0" name="colors">
+            <option value="color0" selected output>Colour:</option>
+            <option value="color1">Red</option>
+            <option value="color2">Yellow</option>
+            <option value="color3">Green</option>
+            <option value="color4">Purple</option>
+            <option value="color5">Grey</option>
+            <option value="color6">Blue</option>
+          </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p1w1" name="d2p1w1">
+            <select id="colors1" name="colors2">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p1w1" name="d3p1w1">
+            <select id="colors2" name="colors3">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p1w1" name="d4p1w1">
+            <select id="colors3" name="colors4">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p1w1" name="d5p1w1">
+            <select id="colors4" name="colors5">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+              &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 2</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p2w1" name="d1p2w1">
+            <select id="colors5" name="colors6">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p2w1" name="d2p2w1">
+            <select id="colors6" name="colors7">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p2w1" name="d3p2w1">
+            <select id="colors7" name="colors8">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p2w1" name="d4p2w1">
+            <select id="colors8" name="colors9">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p2w1" name="d5p2w1">
+            <select id="colors9" name="colors10">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 3</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p3w1" name="d1p3w1">
+            <select id="colors10" name="colors11">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p3w1" name="d2p3w1">
+            <select id="colors11" name="colors12">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p3w1" name="d3p3w1">
+            <select id="colors12" name="colors13">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p3w1" name="d4p3w1">
+            <select id="colors13" name="colors14">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p3w1" name="d5p3w1">
+            <select id="colors14" name="colors15">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 4</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p4w1" name="d1p4w1">
+            <select id="colors15" name="colors16">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p4w1" name="d2p4w1">
+            <select id="colors16" name="colors17">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p4w1" name="d3p4w1">
+            <select id="colors17" name="colors18">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p4w1" name="d4p4w1">
+            <select id="colors18" name="colors19">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p4w1" name="d5p4w1">
+            <select id="colors19" name="colors20">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 5</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p5w1" name="d1p5w1">
+            <select id="colors20" name="colors21">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p5w1" name="d2p5w1">
+            <select id="colors21" name="colors22">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p5w1" name="d3p5w1">
+            <select id="colors22" name="colors23">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p5w1" name="d4p5w1">
+            <select id="colors23" name="colors25">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p5w1" name="d5p5w1">
+            <select id="colors24" name="colors26">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 6</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p6w1" name="d1p6w1">
+            <select id="colors25" name="colors27">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p6w1" name="d2p6w1">
+            <select id="colors26" name="colors28">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p6w1" name="d3p6w1">
+            <select id="colors27" name="colors29">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p6w1" name="d4p6w1">
+            <select id="colors28" name="colors30">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p6w1" name="d5p6w1">
+            <select id="colors29" name="colors31">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+              </select>
+              &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Week B</td>
+          <td>Monday</td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
+        </tr>
+        <tr>
+          <td>Period 1</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p1w2">
+            <select id="colors30">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p1w2">                
+            <select id="colors31">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p1w2">                
+            <select id="colors32">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p1w2">                
+            <select id="colors33">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p1w2">                
+            <select id="colors34">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 2</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p2w2">                
+            <select id="colors35">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p2w2">                
+            <select id="colors36">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p2w2">                
+            <select id="colors37">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p2w2">                
+            <select id="colors38">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p2w2">                
+            <select id="colors39">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 3</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p3w2">                
+            <select id="colors40">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p3w2">                
+            <select id="colors41">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p3w2">                
+            <select id="colors42">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p3w2">                
+            <select id="colors43">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p3w2">                
+            <select id="colors44">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 4</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p4w2">                
+            <select id="colors45">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p4w2">                
+            <select id="colors46">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p4w2">                
+            <select id="colors47">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p4w2">                
+            <select id="colors48">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p4w2">                
+            <select id="colors49">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 5</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p5w2">                
+            <select id="colors50">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p5w2">                
+            <select id="colors51">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p5w2">                
+            <select id="colors52">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p5w2">                
+            <select id="colors53">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p5w2">                
+            <select id="colors54">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+        </tr>
+        <tr>
+          <td>Period 6</td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d1p6w2">                
+            <select id="colors55">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d2p6w2">                
+            <select id="colors56">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d3p6w2">                
+            <select id="colors57">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d4p6w2">                
+            <select id="colors58">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+          <td>
+            <input type="text" placeholder="Enter Class Info" id="d5p6w2">                
+            <select id="colors59">
+              <option value="color0" selected output>Colour:</option>
+              <option value="color1">Red</option>
+              <option value="color2">Yellow</option>
+              <option value="color3">Green</option>
+              <option value="color4">Purple</option>
+              <option value="color5">Grey</option>
+              <option value="color6">Blue</option>
+            </select>
+            &#8203 &#8203
+          </td>
+        </tr>
+      </table>
+      
+      <button type="button" onclick="displayData()">Generate Table</button>
+    </form>
 
-<table>
-    <thead>
+    <table id="dataTable">
+      <thead>
         <tr>
-            <th>Periods</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Period 1</td>
-            <td>
-                <select id="period-1-monday">
-                <option value="color0" selected output>Colour:</option>
-                <option value="color1">Red</option>
-                <option value="color2">Yellow</option>
-                <option value="color3">Green</option>
-                <option value="color4">Purple</option>
-                <option value="color5">Grey</option>
-                <option value="color6">Blue</option>
-            </td>
-            <td><input type="text" id="period-1-tuesday"></td>
-            <td><input type="text" id="period-1-wednesday"></td>
-            <td><input type="text" id="period-1-thursday"></td>
-            <td><input type="text" id="period-1-friday"></td>
+          <td>Week A</td>
+          <td>Monday</td>
+          <td></td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
         </tr>
         <tr>
-            <td>Period 2</td>
-            <td><input type="text" id="period-2-monday"></td>
-            <td><input type="text" id="period-2-tuesday"></td>
-            <td><input type="text" id="period-2-wednesday"></td>
-            <td><input type="text" id="period-2-thursday"></td>
-            <td><input type="text" id="period-2-friday"></td>
-        </tr>
-        <tr>
-            <td>Period 3</td>
-            <td><input type="text" id="period-3-monday"></td>
-            <td><input type="text" id="period-3-tuesday"></td>
-            <td><input type="text" id="period-3-wednesday"></td>
-            <td><input type="text" id="period-3-thursday"></td>
-            <td><input type="text" id="period-3-friday"></td>
-        </tr>
-        <tr>
-            <td>Period 4</td>
-            <td><input type="text" id="period-4-monday"></td>
-            <td><input type="text" id="period-4-tuesday"></td>
-            <td><input type="text" id="period-4-wednesday"></td>
-            <td><input type="text" id="period-4-thursday"></td>
-            <td><input type="text" id="period-4-friday"></td>
-        </tr>
-        <tr>
-            <td>Period 5</td>
-            <td><input type="text" id="period-5-monday"></td>
-            <td><input type="text" id="period-5-tuesday"></td>
-            <td><input type="text" id="period-5-wednesday"></td>
-            <td><input type="text" id="period-5-thursday"></td>
-            <td><input type="text" id="period-5-friday"></td>
-        </tr>
-        <tr>
-            <td>Period 6</td>
-            <td><input type="text" id="period-6-monday"></td>
-            <td><input type="text" id="period-6-tuesday"></td>
-            <td><input type="text" id="period-6-wednesday"></td>
-            <td><input type="text" id="period-6-thursday"></td>
-            <td><input type="text" id="period-6-friday"></td>
-        </tr>
-        <tr>
-            <td>Period 7</td>
-            <td><input type="text" id="period-7-monday"></td>
-            <td><input type="text" id="period-7-tuesday"></td>
-            <td><input type="text" id="period-7-wednesday"></td>
-            <td><input type="text" id="period-7-thursday"></td>
-            <td><input type="text" id="period-7-friday"></td>
-        </tr>        
-    </tbody>
-</table>
+          <td>9:23</td>
+          <th id="d0">
+            <span id="day1p1w1"></span>
+            <script>
+              document.getElementById('colors0').onchange=changeEventHandler;
 
-<table>
-    <thead>
-        <tr>
-            <th>Periods</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Period 1</td>
-            <td><input type="text" id="period2-1-monday2"></td>
-            <td><input type="text" id="period2-1-tuesday2"></td>
-            <td><input type="text" id="period2-1-wednesday2"></td>
-            <td><input type="text" id="period2-1-thursday2"></td>
-            <td><input type="text" id="period2-1-friday2"></td>
-        </tr>
-        <tr>
-            <td>Period 2</td>
-            <td><input type="text" id="period2-2-monday2"></td>
-            <td><input type="text" id="period2-2-tuesday2"></td>
-            <td><input type="text" id="period2-2-wednesday2"></td>
-            <td><input type="text" id="period2-2-thursday2"></td>
-            <td><input type="text" id="period2-2-friday2"></td>
-        </tr>
-        <tr>
-            <td>Period 3</td>
-            <td><input type="text" id="period2-3-monday2"></td>
-            <td><input type="text" id="period2-3-tuesday2"></td>
-            <td><input type="text" id="period2-3-wednesday2"></td>
-            <td><input type="text" id="period2-3-thursday2"></td>
-            <td><input type="text" id="period2-3-friday2"></td>
-        </tr>
-        <tr>
-            <td>Period 4</td>
-            <td><input type="text" id="period2-4-monday2"></td>
-            <td><input type="text" id="period2-4-tuesday2"></td>
-            <td><input type="text" id="period2-4-wednesday2"></td>
-            <td><input type="text" id="period2-4-thursday2"></td>
-            <td><input type="text" id="period2-4-friday2"></td>
-        </tr>
-        <tr>
-            <td>Period 5</td>
-            <td><input type="text" id="period2-5-monday2"></td>
-            <td><input type="text" id="period2-5-tuesday2"></td>
-            <td><input type="text" id="period2-5-wednesday2"></td>
-            <td><input type="text" id="period2-5-thursday2"></td>
-            <td><input type="text" id="period2-5-friday2"></td>
-        </tr>
-        <tr>
-            <td>Period 6</td>
-            <td><input type="text" id="period2-6-monday2"></td>
-            <td><input type="text" id="period2-6-tuesday2"></td>
-            <td><input type="text" id="period2-6-wednesday2"></td>
-            <td><input type="text" id="period2-6-thursday2"></td>
-            <td><input type="text" id="period2-6-friday2"></td>
-        </tr>
-        <tr>
-            <td>Period 7</td>
-            <td><input type="text" id="period2-7-monday2"></td>
-            <td><input type="text" id="period2-7-tuesday2"></td>
-            <td><input type="text" id="period2-7-wednesday2"></td>
-            <td><input type="text" id="period2-7-thursday2"></td>
-            <td><input type="text" id="period2-7-friday2"></td>
-        </tr>        
-    </tbody>
-    
-</table>
+              var indicator = document.getElementById("d0");
+              
+              function changeEventHandler() {
+                indicator.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>8:53</td>
+          <th id="d1">
+            <span id="day2p1w1"></span>
+            <script>
+              document.getElementById('colors1').onchange=changeEventHandler;
 
-<button onclick="saveSubjects">
-Save Table
-</button>
+              var indicator1 = document.getElementById("d1");
+              
+              function changeEventHandler() {
+                  indicator1.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d2">
+            <span id="day3p1w1"></span>
+            <script>
+              document.getElementById('colors2').onchange=changeEventHandler;
 
-<button onclick="loadSubjects">
-Load Table
-</button>
+              var indicator2 = document.getElementById("d2");
+              
+              function changeEventHandler() {
+                indicator2.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d3">
+            <span id="day4p1w1"></span>
+            <script>
+              document.getElementById('colors3').onchange=changeEventHandler;
+
+              var indicator3 = document.getElementById("d3");
+              
+              function changeEventHandler() {
+                indicator3.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d4">
+            <span id="day5p1w1"></span>
+            <script>
+              document.getElementById('colors4').onchange=changeEventHandler;
+
+              var indicator4 = document.getElementById("d4");
+              
+              function changeEventHandler() {
+                indicator4.classList = this.value;
+              }
+            </script>
+          </th>
+        <tr>
+        <tr>
+          <td>10:10</td>
+          <th id="d5">
+            <span id="day1p2w1"></span>
+            <script>
+              document.getElementById('colors5').onchange=changeEventHandler;
+
+              var indicator5 = document.getElementById("d5");
+              
+              function changeEventHandler() {
+                indicator5.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>9:45</td>
+          <th id="d6">
+            <span id="day2p2w1"></span>
+            <script>
+              document.getElementById('colors6').onchange=changeEventHandler;
+
+              var indicator6 = document.getElementById("d6");
+              
+              function changeEventHandler() {
+                indicator6.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d7">
+            <span id="day3p2w1"></span>
+            <script>
+              document.getElementById('colors7').onchange=changeEventHandler;
+
+              var indicator7 = document.getElementById("d7");
+              
+              function changeEventHandler() {
+                indicator7.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d8">
+            <span id="day4p2w1"></span>
+            <script>
+              document.getElementById('colors8').onchange=changeEventHandler;
+
+              var indicator8 = document.getElementById("d8");
+              
+              function changeEventHandler() {
+                indicator8.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d9">
+            <span id="day5p2w1"></span>
+            <script>
+              document.getElementById('colors9').onchange=changeEventHandler;
+
+              var indicator9 = document.getElementById("d9");
+              
+              function changeEventHandler() {
+                indicator9.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>10:57</td>
+          <td>Recess</td>
+          <td>10:37</td>
+          <td colspan="4">Recess</td>
+        </tr>
+        <tr>
+          <td>11:17</td>
+          <th id="d10">
+            <span id="day1p3w1"></span>
+            <script>
+              document.getElementById('colors10').onchange=changeEventHandler;
+
+              var indicator10 = document.getElementById("d10");
+              
+              function changeEventHandler() {
+                indicator10.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>10:57</td>
+          <th id="d11">
+            <span id="day2p3w1"></span>
+            <script>
+              document.getElementById('colors11').onchange=changeEventHandler;
+
+              var indicator11 = document.getElementById("d11");
+              
+              function changeEventHandler() {
+                indicator11.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d12">
+            <span id="day3p3w1"></span>
+            <script>
+              document.getElementById('colors12').onchange=changeEventHandler;
+
+              var indicator12 = document.getElementById("d12");
+              
+              function changeEventHandler() {
+                indicator12.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d13">
+            <span id="day4p3w1"></span>
+            <script>
+              document.getElementById('colors13').onchange=changeEventHandler;
+
+              var indicator13 = document.getElementById("d13");
+              
+              function changeEventHandler() {
+                indicator13.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d14">
+            <span id="day5p3w1"></span>
+            <script>
+              document.getElementById('colors14').onchange=changeEventHandler;
+
+              var indicator14 = document.getElementById("d14");
+              
+              function changeEventHandler() {
+                indicator14.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>12:04</td>
+          <th id="d15">
+            <span id="day1p4w1"></span>
+            <script>
+              document.getElementById('colors15').onchange=changeEventHandler;
+
+              var indicator15 = document.getElementById("d15");
+              
+              function changeEventHandler() {
+                indicator15.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>11:49</td>
+          <th id="d16">
+            <span id="day2p4w1"></span>
+            <script>
+              document.getElementById('colors16').onchange=changeEventHandler;
+
+              var indicator16 = document.getElementById("d16");
+              
+              function changeEventHandler() {
+                indicator16.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d17">
+            <span id="day3p4w1"></span>
+            <script>
+              document.getElementById('colors17').onchange=changeEventHandler;
+
+              var indicator17 = document.getElementById("d17");
+              
+              function changeEventHandler() {
+                indicator17.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d18">
+            <span id="day4p4w1"></span>
+            <script>
+              document.getElementById('colors18').onchange=changeEventHandler;
+
+              var indicator18 = document.getElementById("d18");
+              
+              function changeEventHandler() {
+                indicator18.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d19">
+            <span id="day5p4w1"></span>
+            <script>
+              document.getElementById('colors19').onchange=changeEventHandler;
+
+              var indicator19 = document.getElementById("d19");
+              
+              function changeEventHandler() {
+                indicator19.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>12:51</td>
+          <td>Lunch</td>
+          <td>12:41</td>
+          <td colspan="4">Lunch</td>
+        </tr>
+        <tr>
+          <td>1:31</td>
+          <th id="d20">
+            <span id="day1p5w1"></span>
+            <script>
+              document.getElementById('colors20').onchange=changeEventHandler;
+
+              var indicator20 = document.getElementById("d20");
+              
+              function changeEventHandler() {
+                indicator20.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>1:21</td>
+          <th id="d21">
+            <span id="day2p5w1"></span>
+            <script>
+              document.getElementById('colors21').onchange=changeEventHandler;
+
+              var indicator21 = document.getElementById("d21");
+              
+              function changeEventHandler() {
+                indicator21.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d22">
+            <span id="day3p5w1"></span>
+            <script>
+              document.getElementById('colors22').onchange=changeEventHandler;
+
+              var indicator22 = document.getElementById("d22");
+              
+              function changeEventHandler() {
+                indicator22.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d23">
+            <span id="day4p5w1"></span>
+            <script>
+              document.getElementById('colors23').onchange=changeEventHandler;
+
+              var indicator23 = document.getElementById("d23");
+              
+              function changeEventHandler() {
+                indicator23.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d24">
+            <span id="day5p5w1"></span>
+            <script>
+              document.getElementById('colors24').onchange=changeEventHandler;
+
+              var indicator24 = document.getElementById("d24");
+              
+              function changeEventHandler() {
+                indicator24.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>2:18</td>
+          <th id="d25">
+            <span id="day1p6w1"></span>
+            <script>
+              document.getElementById('colors25').onchange=changeEventHandler;
+
+              var indicator25 = document.getElementById("d25");
+              
+              function changeEventHandler() {
+                indicator25.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>2:13</td>
+          <th id="d26">
+            <span id="day2p6w1"></span>
+            <script>
+              document.getElementById('colors26').onchange=changeEventHandler;
+
+              var indicator26 = document.getElementById("d26");
+              
+              function changeEventHandler() {
+                indicator26.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d27">
+            <span id="day3p6w1"></span>
+            <script>
+              document.getElementById('colors27').onchange=changeEventHandler;
+
+              var indicator27 = document.getElementById("d27");
+              
+              function changeEventHandler() {
+                indicator27.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d28">
+            <span id="day4p6w1"></span>
+            <script>
+              document.getElementById('colors28').onchange=changeEventHandler;
+
+              var indicator28 = document.getElementById("d28");
+              
+              function changeEventHandler() {
+                indicator28.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d29">
+            <span id="day5p6w1"></span>
+            <script>
+              document.getElementById('colors29').onchange=changeEventHandler;
+
+              var indicator29 = document.getElementById("d29");
+              
+              function changeEventHandler() {
+                indicator29.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="7">&#8203</td>
+        </tr>
+        <tr>
+          <td>Week B</td>
+          <td>Monday</td>
+          <td></td>
+          <td>Tuesday</td>
+          <td>Wednesday</td>
+          <td>Thursday</td>
+          <td>Friday</td>
+        </tr>
+        <tr>
+          <td>9:23</td>
+          <th id="d30">
+            <span id="day1p1w2"></span>
+            <script>
+              document.getElementById('colors30').onchange=changeEventHandler;
+
+              var indicator30 = document.getElementById("d30");
+              
+              function changeEventHandler() {
+                indicator30.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>8:53</td>
+          <th id="d31">
+            <span id="day2p1w2"></span>
+            <script>
+              document.getElementById('colors31').onchange=changeEventHandler;
+
+              var indicator31 = document.getElementById("d31");
+              
+              function changeEventHandler() {
+                  indicator31.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d32">
+            <span id="day3p1w2"></span>
+            <script>
+              document.getElementById('colors32').onchange=changeEventHandler;
+
+              var indicator32 = document.getElementById("d32");
+              
+              function changeEventHandler() {
+                indicator32.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d33">
+            <span id="day4p1w2"></span>
+            <script>
+              document.getElementById('colors33').onchange=changeEventHandler;
+
+              var indicator33 = document.getElementById("d33");
+              
+              function changeEventHandler() {
+                indicator33.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d34">
+            <span id="day5p1w2"></span>
+            <script>
+              document.getElementById('colors34').onchange=changeEventHandler;
+
+              var indicator34 = document.getElementById("d34");
+              
+              function changeEventHandler() {
+                indicator34.classList = this.value;
+              }
+            </script>
+          </th>
+        <tr>
+        <tr>
+          <td>10:10</td>
+          <th id="d35">
+            <span id="day1p2w2"></span>
+            <script>
+              document.getElementById('colors35').onchange=changeEventHandler;
+
+              var indicator35 = document.getElementById("d35");
+              
+              function changeEventHandler() {
+                indicator35.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>9:45</td>
+          <th id="d36">
+            <span id="day2p2w2"></span>
+            <script>
+              document.getElementById('colors36').onchange=changeEventHandler;
+
+              var indicator36 = document.getElementById("d36");
+              
+              function changeEventHandler() {
+                indicator36.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d37">
+            <span id="day3p2w2"></span>
+            <script>
+              document.getElementById('colors37').onchange=changeEventHandler;
+
+              var indicator37 = document.getElementById("d37");
+              
+              function changeEventHandler() {
+                indicator37.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d38">
+            <span id="day4p2w2"></span>
+            <script>
+              document.getElementById('colors38').onchange=changeEventHandler;
+
+              var indicator38 = document.getElementById("d38");
+              
+              function changeEventHandler() {
+                indicator38.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d39">
+            <span id="day5p2w2"></span>
+            <script>
+              document.getElementById('colors39').onchange=changeEventHandler;
+
+              var indicator39 = document.getElementById("d39");
+              
+              function changeEventHandler() {
+                indicator39.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>10:57</td>
+          <td>Recess</td>
+          <td>10:37</td>
+          <td colspan="4">Recess</td>
+        </tr>
+        <tr>
+          <td>11:17</td>
+          <th id="d40">
+            <span id="day1p3w2"></span>
+            <script>
+              document.getElementById('colors40').onchange=changeEventHandler;
+
+              var indicator40 = document.getElementById("d40");
+              
+              function changeEventHandler() {
+                indicator40.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>10:57</td>
+          <th id="d41">
+            <span id="day2p3w2"></span>
+            <script>
+              document.getElementById('colors41').onchange=changeEventHandler;
+
+              var indicator41 = document.getElementById("d41");
+              
+              function changeEventHandler() {
+                indicator41.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d42">
+            <span id="day3p3w2"></span>
+            <script>
+              document.getElementById('colors42').onchange=changeEventHandler;
+
+              var indicator42 = document.getElementById("d42");
+              
+              function changeEventHandler() {
+                indicator42.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d43">
+            <span id="day4p3w2"></span>
+            <script>
+              document.getElementById('colors43').onchange=changeEventHandler;
+
+              var indicator43 = document.getElementById("d43");
+              
+              function changeEventHandler() {
+                indicator43.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d44">
+            <span id="day5p3w2"></span>
+            <script>
+              document.getElementById('colors44').onchange=changeEventHandler;
+
+              var indicator44 = document.getElementById("d44");
+              
+              function changeEventHandler() {
+                indicator44.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>12:04</td>
+          <th id="d45">
+            <span id="day1p4w2"></span>
+            <script>
+              document.getElementById('colors45').onchange=changeEventHandler;
+
+              var indicator45 = document.getElementById("d45");
+              
+              function changeEventHandler() {
+                indicator45.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>11:49</td>
+          <th id="d46">
+            <span id="day2p4w2"></span>
+            <script>
+              document.getElementById('colors46').onchange=changeEventHandler;
+
+              var indicator46 = document.getElementById("d46");
+              
+              function changeEventHandler() {
+                indicator46.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d47">
+            <span id="day3p4w2"></span>
+            <script>
+              document.getElementById('colors47').onchange=changeEventHandler;
+
+              var indicator47 = document.getElementById("d47");
+              
+              function changeEventHandler() {
+                indicator47.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d48">
+            <span id="day4p4w2"></span>
+            <script>
+              document.getElementById('colors48').onchange=changeEventHandler;
+
+              var indicator48 = document.getElementById("d48");
+              
+              function changeEventHandler() {
+                indicator48.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d49">
+            <span id="day5p4w2"></span>
+            <script>
+              document.getElementById('colors49').onchange=changeEventHandler;
+
+              var indicator49 = document.getElementById("d49");
+              
+              function changeEventHandler() {
+                indicator49.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>12:51</td>
+          <td>Lunch</td>
+          <td>12:41</td>
+          <td colspan="4">Lunch</td>
+        </tr>
+        <tr>
+          <td>1:31</td>
+          <th id="d50">
+            <span id="day1p5w2"></span>
+            <script>
+              document.getElementById('colors50').onchange=changeEventHandler;
+
+              var indicator50 = document.getElementById("d50");
+              
+              function changeEventHandler() {
+                indicator50.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>1:21</td>
+          <th id="d51">
+            <span id="day2p5w2"></span>
+            <script>
+              document.getElementById('colors51').onchange=changeEventHandler;
+
+              var indicator51 = document.getElementById("d51");
+              
+              function changeEventHandler() {
+                indicator51.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d52">
+            <span id="day3p5w2"></span>
+            <script>
+              document.getElementById('colorsd52').onchange=changeEventHandler;
+
+              var indicator52 = document.getElementById("d52");
+              
+              function changeEventHandler() {
+                indicator52.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d53">
+            <span id="day4p5w2"></span>
+            <script>
+              document.getElementById('colors53').onchange=changeEventHandler;
+
+              var indicator53 = document.getElementById("d53");
+              
+              function changeEventHandler() {
+                indicator53.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d54">
+            <span id="day5p5w2"></span>
+            <script>
+              document.getElementById('colors54').onchange=changeEventHandler;
+
+              var indicator54 = document.getElementById("d54");
+              
+              function changeEventHandler() {
+                indicator54.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+        <tr>
+          <td>2:18</td>
+          <th id="d55">
+            <span id="day1p6w2"></span>
+            <script>
+              document.getElementById('colors55').onchange=changeEventHandler;
+
+              var indicator55 = document.getElementById("d55");
+              
+              function changeEventHandler() {
+                indicator55.classList = this.value;
+              }
+            </script>
+          </th>
+          <td>2:13</td>
+          <th id="d56">
+            <span id="day2p6w2"></span>
+            <script>
+              document.getElementById('colors56').onchange=changeEventHandler;
+
+              var indicator56 = document.getElementById("d56");
+              
+              function changeEventHandler() {
+                indicator56.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d57">
+            <span id="day3p6w2"></span>
+            <script>
+              document.getElementById('colors57').onchange=changeEventHandler;
+
+              var indicator57 = document.getElementById("d57");
+              
+              function changeEventHandler() {
+                indicator57.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d58">
+            <span id="day4p6w2"></span>
+            <script>
+              document.getElementById('colors58').onchange=changeEventHandler;
+
+              var indicator58 = document.getElementById("d58");
+              
+              function changeEventHandler() {
+                indicator58.classList = this.value;
+              }
+            </script>
+          </th>
+          <th id="d59">
+            <span id="day5p6w2"></span>
+            <script>
+              document.getElementById('colors59').onchange=changeEventHandler;
+
+              var indicator59 = document.getElementById("d59");
+              
+              function changeEventHandler() {
+                indicator59.classList = this.value;
+              }
+            </script>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</div>
 
 <script>
-    # Define the structure
-    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    periods = ["Period 1", "Period 2", "Period 3", "Period 4", "Period 5", "Period 6"]
-    colors = ["Red", "Yellow", "Green", "Purple", "Grey", "Blue"]
-    
-    # Function to generate the timetable for a given week
-    def generate_timetable(week_name, times):
-        print(f"Week {week_name}")
-        for day in days:
-            print(f"{day}:")
-            for i, period in enumerate(periods):
-                print(f"  {period}: {colors[i % len(colors)]}")
-            if day in times:
-                print(f"  {times[day]}")
-    
-    # Define the times for Week A and Week B
-    week_a_times = {
-        "Monday": "9:23",
-        "Tuesday": "8:53",
-        "Wednesday": "10:10",
-        "Thursday": "9:45",
-        "Friday": "10:57"
-    }
-    
-    week_b_times = {
-        "Monday": "9:23",
-        "Tuesday": "8:53",
-        "Wednesday": "10:10",
-        "Thursday": "9:45",
-        "Friday": "10:57"
-    }
-    
-    # Generate the timetables
-    generate_timetable("A", week_a_times)
-    generate_timetable("B", week_b_times)
+function displayData() {
+const d1p1w1 = document.getElementById("d1p1w1").value;
+const d2p1w1 = document.getElementById("d2p1w1").value;
+const d3p1w1 = document.getElementById("d3p1w1").value;
+const d4p1w1 = document.getElementById("d4p1w1").value;
+const d5p1w1 = document.getElementById("d5p1w1").value;
+const d1p2w1 = document.getElementById("d1p2w1").value;
+const d2p2w1 = document.getElementById("d2p2w1").value;
+const d3p2w1 = document.getElementById("d3p2w1").value;
+const d4p2w1 = document.getElementById("d4p2w1").value;
+const d5p2w1 = document.getElementById("d5p2w1").value;
+const d1p3w1 = document.getElementById("d1p3w1").value;
+const d2p3w1 = document.getElementById("d2p3w1").value;
+const d3p3w1 = document.getElementById("d3p3w1").value;
+const d4p3w1 = document.getElementById("d4p3w1").value;
+const d5p3w1 = document.getElementById("d5p3w1").value;
+const d1p4w1 = document.getElementById("d1p4w1").value;
+const d2p4w1 = document.getElementById("d2p4w1").value;
+const d3p4w1 = document.getElementById("d3p4w1").value;
+const d4p4w1 = document.getElementById("d4p4w1").value;
+const d5p4w1 = document.getElementById("d5p4w1").value;
+const d1p5w1 = document.getElementById("d1p5w1").value;
+const d2p5w1 = document.getElementById("d2p5w1").value;
+const d3p5w1 = document.getElementById("d3p5w1").value;
+const d4p5w1 = document.getElementById("d4p5w1").value;
+const d5p5w1 = document.getElementById("d5p5w1").value;
+const d1p6w1 = document.getElementById("d1p6w1").value;
+const d2p6w1 = document.getElementById("d2p6w1").value;
+const d3p6w1 = document.getElementById("d3p6w1").value;
+const d4p6w1 = document.getElementById("d4p6w1").value;
+const d5p6w1 = document.getElementById("d5p6w1").value;
+
+const d1p1w2 = document.getElementById("d1p1w2").value;
+const d2p1w2 = document.getElementById("d2p1w2").value;
+const d3p1w2 = document.getElementById("d3p1w2").value;
+const d4p1w2 = document.getElementById("d4p1w2").value;
+const d5p1w2 = document.getElementById("d5p1w2").value;
+const d1p2w2 = document.getElementById("d1p2w2").value;
+const d2p2w2 = document.getElementById("d2p2w2").value;
+const d3p2w2 = document.getElementById("d3p2w2").value;
+const d4p2w2 = document.getElementById("d4p2w2").value;
+const d5p2w2 = document.getElementById("d5p2w2").value;
+const d1p3w2 = document.getElementById("d1p3w2").value;
+const d2p3w2 = document.getElementById("d2p3w2").value;
+const d3p3w2 = document.getElementById("d3p3w2").value;
+const d4p3w2 = document.getElementById("d4p3w2").value;
+const d5p3w2 = document.getElementById("d5p3w2").value;
+const d1p4w2 = document.getElementById("d1p4w2").value;
+const d2p4w2 = document.getElementById("d2p4w2").value;
+const d3p4w2 = document.getElementById("d3p4w2").value;
+const d4p4w2 = document.getElementById("d4p4w2").value;
+const d5p4w2 = document.getElementById("d5p4w2").value;
+const d1p5w2 = document.getElementById("d1p5w2").value;
+const d2p5w2 = document.getElementById("d2p5w2").value;
+const d3p5w2 = document.getElementById("d3p5w2").value;
+const d4p5w2 = document.getElementById("d4p5w2").value;
+const d5p5w2 = document.getElementById("d5p5w2").value;
+const d1p6w2 = document.getElementById("d1p6w2").value;
+const d2p6w2 = document.getElementById("d2p6w2").value;
+const d3p6w2 = document.getElementById("d3p6w2").value;
+const d4p6w2 = document.getElementById("d4p6w2").value;
+const d5p6w2 = document.getElementById("d5p6w2").value;
+
+const data = {
+    d1p1w1: d1p1w1,
+    d2p1w1: d2p1w1,
+    d3p1w1: d3p1w1,
+    d4p1w1: d4p1w1,
+    d5p1w1: d5p1w1,
+    d1p2w1: d1p2w1,
+    d2p2w1: d2p2w1,
+    d3p2w1: d3p2w1,
+    d4p2w1: d4p2w1,
+    d5p2w1: d5p2w1,
+    d1p3w1: d1p3w1,
+    d2p3w1: d2p3w1,
+    d3p3w1: d3p3w1,
+    d4p3w1: d4p3w1,
+    d5p3w1: d5p3w1,
+    d1p4w1: d1p4w1,
+    d2p4w1: d2p4w1,
+    d3p4w1: d3p4w1,
+    d4p4w1: d4p4w1,
+    d5p4w1: d5p4w1,
+    d1p5w1: d1p5w1,
+    d2p5w1: d2p5w1,
+    d3p5w1: d3p5w1,
+    d4p5w1: d4p5w1,
+    d5p5w1: d5p5w1,
+    d1p6w1: d1p6w1,
+    d2p6w1: d2p6w1,
+    d3p6w1: d3p6w1,
+    d4p6w1: d4p6w1,
+    d5p6w1: d5p6w1,
+
+    d1p1w2: d1p1w2,
+    d2p1w2: d2p1w2,
+    d3p1w2: d3p1w2,
+    d4p1w2: d4p1w2,
+    d5p1w2: d5p1w2,
+    d1p2w2: d1p2w2,
+    d2p2w2: d2p2w2,
+    d3p2w2: d3p2w2,
+    d4p2w2: d4p2w2,
+    d5p2w2: d5p2w2,
+    d1p3w2: d1p3w2,
+    d2p3w2: d2p3w2,
+    d3p3w2: d3p3w2,
+    d4p3w2: d4p3w2,
+    d5p3w2: d5p3w2,
+    d1p4w2: d1p4w2,
+    d2p4w2: d2p4w2,
+    d3p4w2: d3p4w2,
+    d4p4w2: d4p4w2,
+    d5p4w2: d5p4w2,
+    d1p5w2: d1p5w2,
+    d2p5w2: d2p5w2,
+    d3p5w2: d3p5w2,
+    d4p5w2: d4p5w2,
+    d5p5w2: d5p5w2,
+    d1p6w2: d1p6w2,
+    d2p6w2: d2p6w2,
+    d3p6w2: d3p6w2,
+    d4p6w2: d4p6w2,
+    d5p6w2: d5p6w2,
+};
+
+
+document.getElementById('day1p1w1').innerHTML = d1p1w1;
+document.getElementById('day2p1w1').innerHTML = d2p1w1;
+document.getElementById('day3p1w1').innerHTML = d3p1w1;
+document.getElementById('day4p1w1').innerHTML = d4p1w1;
+document.getElementById('day5p1w1').innerHTML = d5p1w1;
+document.getElementById('day1p2w1').innerHTML = d1p2w1;
+document.getElementById('day2p2w1').innerHTML = d2p2w1;
+document.getElementById('day3p2w1').innerHTML = d3p2w1;
+document.getElementById('day4p2w1').innerHTML = d4p2w1;
+document.getElementById('day5p2w1').innerHTML = d5p2w1;
+document.getElementById('day1p3w1').innerHTML = d1p3w1;
+document.getElementById('day2p3w1').innerHTML = d2p3w1;
+document.getElementById('day3p3w1').innerHTML = d3p3w1;
+document.getElementById('day4p3w1').innerHTML = d4p3w1;
+document.getElementById('day5p3w1').innerHTML = d5p3w1;
+document.getElementById('day1p4w1').innerHTML = d1p4w1;
+document.getElementById('day2p4w1').innerHTML = d2p4w1;
+document.getElementById('day3p4w1').innerHTML = d3p4w1;
+document.getElementById('day4p4w1').innerHTML = d4p4w1;
+document.getElementById('day5p4w1').innerHTML = d5p4w1;
+document.getElementById('day1p5w1').innerHTML = d1p5w1;
+document.getElementById('day2p5w1').innerHTML = d2p5w1;
+document.getElementById('day3p5w1').innerHTML = d3p5w1;
+document.getElementById('day4p5w1').innerHTML = d4p5w1;
+document.getElementById('day5p5w1').innerHTML = d5p5w1;
+document.getElementById('day1p6w1').innerHTML = d1p6w1;
+document.getElementById('day2p6w1').innerHTML = d2p6w1;
+document.getElementById('day3p6w1').innerHTML = d3p6w1;
+document.getElementById('day4p6w1').innerHTML = d4p6w1;
+document.getElementById('day5p6w1').innerHTML = d5p6w1;
+
+document.getElementById('day1p1w2').innerHTML = d1p1w2;
+document.getElementById('day2p1w2').innerHTML = d2p1w2;
+document.getElementById('day3p1w2').innerHTML = d3p1w2;
+document.getElementById('day4p1w2').innerHTML = d4p1w2;
+document.getElementById('day5p1w2').innerHTML = d5p1w2;
+document.getElementById('day1p2w2').innerHTML = d1p2w2;
+document.getElementById('day2p2w2').innerHTML = d2p2w2;
+document.getElementById('day3p2w2').innerHTML = d3p2w2;
+document.getElementById('day4p2w2').innerHTML = d4p2w2;
+document.getElementById('day5p2w2').innerHTML = d5p2w2;
+document.getElementById('day1p3w2').innerHTML = d1p3w2;
+document.getElementById('day2p3w2').innerHTML = d2p3w2;
+document.getElementById('day3p3w2').innerHTML = d3p3w2;
+document.getElementById('day4p3w2').innerHTML = d4p3w2;
+document.getElementById('day5p3w2').innerHTML = d5p3w2;
+document.getElementById('day1p4w2').innerHTML = d1p4w2;
+document.getElementById('day2p4w2').innerHTML = d2p4w2;
+document.getElementById('day3p4w2').innerHTML = d3p4w2;
+document.getElementById('day4p4w2').innerHTML = d4p4w2;
+document.getElementById('day5p4w2').innerHTML = d5p4w2;
+document.getElementById('day1p5w2').innerHTML = d1p5w2;
+document.getElementById('day2p5w2').innerHTML = d2p5w2;
+document.getElementById('day3p5w2').innerHTML = d3p5w2;
+document.getElementById('day4p5w2').innerHTML = d4p5w2;
+document.getElementById('day5p5w2').innerHTML = d5p5w2;
+document.getElementById('day1p6w2').innerHTML = d1p6w2;
+document.getElementById('day2p6w2').innerHTML = d2p6w2;
+document.getElementById('day3p6w2').innerHTML = d3p6w2;
+document.getElementById('day4p6w2').innerHTML = d4p6w2;
+document.getElementById('day5p6w2').innerHTML = d5p6w2;
+
+document.getElementById("d1p1w1").value = "";
+document.getElementById("d2p1w1").value = "";
+document.getElementById("d3p1w1").value = "";
+document.getElementById("d4p1w1").value = "";
+document.getElementById("d5p1w1").value = "";
+document.getElementById("d1p2w1").value = "";
+document.getElementById("d2p2w1").value = "";
+document.getElementById("d3p2w1").value = "";
+document.getElementById("d4p2w1").value = "";
+document.getElementById("d5p2w1").value = "";
+document.getElementById("d1p3w1").value = "";
+document.getElementById("d2p3w1").value = "";
+document.getElementById("d3p3w1").value = "";
+document.getElementById("d4p3w1").value = "";
+document.getElementById("d5p3w1").value = "";
+document.getElementById("d1p4w1").value = "";
+document.getElementById("d2p4w1").value = "";
+document.getElementById("d3p4w1").value = "";
+document.getElementById("d4p4w1").value = "";
+document.getElementById("d5p4w1").value = "";
+document.getElementById("d1p5w1").value = "";
+document.getElementById("d2p5w1").value = "";
+document.getElementById("d3p5w1").value = "";
+document.getElementById("d4p5w1").value = "";
+document.getElementById("d5p5w1").value = "";
+document.getElementById("d1p6w1").value = "";
+document.getElementById("d2p6w1").value = "";
+document.getElementById("d3p6w1").value = "";
+document.getElementById("d4p6w1").value = "";
+document.getElementById("d5p6w1").value = "";
+
+document.getElementById("d1p1w2").value = "";
+document.getElementById("d2p1w2").value = "";
+document.getElementById("d3p1w2").value = "";
+document.getElementById("d4p1w2").value = "";
+document.getElementById("d5p1w2").value = "";
+document.getElementById("d1p2w2").value = "";
+document.getElementById("d2p2w2").value = "";
+document.getElementById("d3p2w2").value = "";
+document.getElementById("d4p2w2").value = "";
+document.getElementById("d5p2w2").value = "";
+document.getElementById("d1p3w2").value = "";
+document.getElementById("d2p3w2").value = "";
+document.getElementById("d3p3w2").value = "";
+document.getElementById("d4p3w2").value = "";
+document.getElementById("d5p3w2").value = "";
+document.getElementById("d1p4w2").value = "";
+document.getElementById("d2p4w2").value = "";
+document.getElementById("d3p4w2").value = "";
+document.getElementById("d4p4w2").value = "";
+document.getElementById("d5p4w2").value = "";
+document.getElementById("d1p5w2").value = "";
+document.getElementById("d2p5w2").value = "";
+document.getElementById("d3p5w2").value = "";
+document.getElementById("d4p5w2").value = "";
+document.getElementById("d5p5w2").value = "";
+document.getElementById("d1p6w2").value = "";
+document.getElementById("d2p6w2").value = "";
+document.getElementById("d3p6w2").value = "";
+document.getElementById("d4p6w2").value = "";
+document.getElementById("d5p6w2").value = "";
+
+document.getElementById("dataForm").style.display = "none";
+document.getElementById("dataTable").style.display = "inline";
+}
 </script>
 
 </body>
